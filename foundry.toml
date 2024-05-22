@@ -2,5 +2,11 @@
 src = "src"
 out = "out"
 libs = ["lib"]
+# this tells foundry that whenever it sees the path "@chainlink/contracts", it should remap it to lib/chainlink-brownie-contracts/contracts
+remappings = [
+    "@chainlink/contracts/=lib/chainlink-brownie-contracts/contracts",
+    "@solmate=lib/solmate/src",
+]
+
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
